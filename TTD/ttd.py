@@ -7,16 +7,22 @@ class Task(object):
     """Terminal ToDo App Task Class"""
     
     def __init__(self, description=None, due_date=None):
-        """Initializes a Task in TTD"""
+        """Initializes a Task in TTD
+        Args:
+            description - taks description
+            due_date - task due date
+        """
 
         self.description = description
         self.due_date = due_date
         self.completed = False
 
     def mark_completed(self):
+        """Marks task as completed [x]"""
         self.completed = True
 
     def __str__(self):
+        """Printing current tasks"""
         status = "[x]" if self.completed else "[ ]"
         return (f"{status} {self.description} \t| Due: {self.due_date}")
 
