@@ -22,7 +22,7 @@ class Task(object):
         self.completed = True
 
     def __str__(self):
-        """Printing current tasks"""
+        """string presentantion of tasks"""
         status = "[x]" if self.completed else "[ ]"
         return (f"{status} {self.description} \t| Due: {self.due_date}")
 
