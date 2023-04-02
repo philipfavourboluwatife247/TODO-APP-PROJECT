@@ -1,1 +1,1 @@
-## Terminal ToDo App Project
+## Terminal ToDo Project
