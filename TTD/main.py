@@ -14,14 +14,16 @@ if __name__ == "__main__":
     task1 = Task("This is my first task", "Today 6am")
     task2 = Task("This is my second task", "Today 9am")
     task3 = Task("This is my last task", "Today Allday")
+    task4 = Task("This is a new task", "now")
 
     # Create new Terminal ToDo List
     todo_list = TTD()
 
     # Add tasks in ToDo List
-    todo_list.add_task(task1)
-    todo_list.add_task(task2)
-    todo_list.add_task(task3)
+    todo_list.add_task(task1, 3)
+    todo_list.add_task(task2, 1)
+    todo_list.add_task(task3, 2)
+    todo_list.add_task(task4, 1)
 
     # print all current tasks
     todo_list.print_tasks()
@@ -33,5 +35,5 @@ if __name__ == "__main__":
     print()
 
     # Remove tasks from ToDo List
-    todo_list.remove_task(task1)
-    todo_list.print_tasks()
+    #todo_list.remove_task(task1)
+    #todo_list.print_tasks()
