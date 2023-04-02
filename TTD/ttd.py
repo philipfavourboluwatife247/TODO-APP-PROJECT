@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-# todo.py by Paul John
-"""Terminal ToDo Application module"""
+# ttd.py by Paul John
+"""Terminal ToDo App (TTD) module"""
 
 class Todo(object):
     pass
