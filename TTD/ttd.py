@@ -25,40 +25,25 @@ class TTD(object):
     """Terminal ToDo List Class"""
 
     def __init__(self, task=None):
-        """Initializes a TTD List"""
+        """Initializes a TTD List
+        Args: task - task object
+        """
+
         self.tasks = []
 
     def add_task(self, task):
+        """Adds a task to ToDo List"""
         self.tasks.append(task)
 
     def remove_task(self, task):
+        """Removes a task from ToDo List"""
         self.tasks.remove(task)
 
     def print_tasks(self):
+        """Prints all the current Tasks in the ToDo List"""
         for task in self.tasks:
             print(task)
 
 
 if __name__ == "__main__":
-    # print("This is only to be used as a module for main.py script.")
-
-    task1 = Task("This is my first task", "Today 6am")
-    task2 = Task("This is my second task", "Today 9am")
-    task3 = Task("This is my last task", "Today Allday")
-
-    # create new Terminal ToDo List
-    todo_list = TTD()
-
-    todo_list.add_task(task1)
-    todo_list.add_task(task2)
-    todo_list.add_task(task3)
-
-    todo_list.print_tasks()
-    print()
-
-    task1.mark_completed()
-
-    todo_list.print_tasks()
-    print()
-    todo_list.remove_task(task1)
-    todo_list.print_tasks()
+    print("This is a module to be used in main.py script.")
