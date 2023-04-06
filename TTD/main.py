@@ -32,7 +32,7 @@ if __name__ == "__main__":
     # Mark task as completed [x]
     task1.mark_completed()
     todo_list.print_tasks()
-    print()
+    print(todo_list)
 
     # Remove tasks from ToDo List
     #todo_list.remove_task(task1)
